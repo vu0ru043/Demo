@@ -56,14 +56,14 @@
 					<groupId>com.github.spotbugs</groupId>
 					<artifactId>spotbugs-maven-plugin</artifactId>
 					<version>4.0.4</version>
-					<executions>
-						<execution>
-							<id>spotbugs</id>
-							<goals>
-								<goal>spotbugs</goal>
-							</goals>
-						</execution>
-					</executions>
+<!-- 					<executions> -->
+<!-- 						<execution> -->
+<!-- 							<id>spotbugs</id> -->
+<!-- 							<goals> -->
+<!-- 								<goal>spotbugs</goal> -->
+<!-- 							</goals> -->
+<!-- 						</execution> -->
+<!-- 					</executions> -->
 				</plugin>
 			</plugins>
 		</pluginManagement>
