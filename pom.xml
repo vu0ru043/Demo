@@ -58,7 +58,7 @@
 					<version>4.0.4</version>
 					<executions>
 						<execution>
-							<id>findbugs-check</id>
+							<id>spotbugs</id>
 							<goals>
 								<goal>spotbugs</goal>
 							</goals>
