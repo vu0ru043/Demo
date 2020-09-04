@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.3.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
@@ -55,7 +55,33 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<!-- <groupId>org.codehaus.mojo</groupId> -->
+				<!-- <artifactId>findbugs-maven-plugin</artifactId> -->
+				<!-- <version>${findbugs.version}</version> -->
+				<!--在compile后自动执行check，必须事先compile编译过,不然findbugs不能发现bug -->
+				<executions>
+					<execution>
+						<id>findbugs-check</id>
+						<phase>compile</phase>
+						<!--<goals> -->
+						<!--<goal>check</goal> -->
+						<!--</goals> -->
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>${findbugs.version}</version>
+			</plugin>
+		</plugins>
+	</reporting>
 
 </project>
